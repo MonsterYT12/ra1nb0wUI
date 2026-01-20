@@ -727,7 +727,7 @@ UICorner_35.Parent = DENY
 
 -- Scripts:
 
-local function TLHMDOK_fake_script() -- OpenItemHighlightList.LocalScript 
+local function AKDSGAT_fake_script() -- OpenItemHighlightList.LocalScript 
 	local script = Instance.new('LocalScript', OpenItemHighlightList)
 
 	local ItemsHighlightList = script.Parent.Parent.Parent.ItemsHighlightList
@@ -737,9 +737,9 @@ local function TLHMDOK_fake_script() -- OpenItemHighlightList.LocalScript
 	end)
 	
 end
-coroutine.wrap(TLHMDOK_fake_script)()
+coroutine.wrap(AKDSGAT_fake_script)()
 -- OpenLookyHighlightList.OpenHighlightList is disabled.
-local function NAMMV_fake_script() -- CloseAllTabs.OpenHighlightList 
+local function CRWTLPQ_fake_script() -- CloseAllTabs.OpenHighlightList 
 	local script = Instance.new('LocalScript', CloseAllTabs)
 
 	local Tab1 = script.Parent.Parent.Parent.MonstersHighlightList
@@ -751,17 +751,17 @@ local function NAMMV_fake_script() -- CloseAllTabs.OpenHighlightList
 	end)
 	
 end
-coroutine.wrap(NAMMV_fake_script)()
-local function FBMPVUB_fake_script() -- TopBar.DragControl 
+coroutine.wrap(CRWTLPQ_fake_script)()
+local function PCDYEHD_fake_script() -- TopBar.DragControl 
 	local script = Instance.new('LocalScript', TopBar)
 
-	local TopBar = script.Parent
-	TopBar.Active = true
-	TopBar.Draggable = true
+	local frame = script.Parent.Parent
+	frame.Active = true
+	frame.Draggable = true
 	
 end
-coroutine.wrap(FBMPVUB_fake_script)()
-local function RWYOJ_fake_script() -- Close.LocalScript 
+coroutine.wrap(PCDYEHD_fake_script)()
+local function ZBRHTMX_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local CloseMenu = script.Parent.Parent.Parent.Parent.CloseMenu
@@ -770,8 +770,8 @@ local function RWYOJ_fake_script() -- Close.LocalScript
 		CloseMenu.Visible = true
 	end)
 end
-coroutine.wrap(RWYOJ_fake_script)()
-local function QWOUW_fake_script() -- OpenMonstersHighlightList.OpenHighlightList 
+coroutine.wrap(ZBRHTMX_fake_script)()
+local function OMSM_fake_script() -- OpenMonstersHighlightList.OpenHighlightList 
 	local script = Instance.new('LocalScript', OpenMonstersHighlightList)
 
 	local MonstersHighlightList = script.Parent.Parent.Parent.MonstersHighlightList
@@ -781,8 +781,8 @@ local function QWOUW_fake_script() -- OpenMonstersHighlightList.OpenHighlightLis
 	end)
 	
 end
-coroutine.wrap(QWOUW_fake_script)()
-local function DIWNKE_fake_script() -- TopBar_2.DragControl 
+coroutine.wrap(OMSM_fake_script)()
+local function SEXRQQ_fake_script() -- TopBar_2.DragControl 
 	local script = Instance.new('LocalScript', TopBar_2)
 
 	local frame = script.Parent.Parent
@@ -790,8 +790,8 @@ local function DIWNKE_fake_script() -- TopBar_2.DragControl
 	frame.Draggable = true
 	
 end
-coroutine.wrap(DIWNKE_fake_script)()
-local function OCMKK_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(SEXRQQ_fake_script)()
+local function NATDNH_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local HighlightList = script.Parent.Parent.Parent
@@ -800,8 +800,8 @@ local function OCMKK_fake_script() -- Close_2.LocalScript
 		HighlightList.Visible = false
 	end)
 end
-coroutine.wrap(OCMKK_fake_script)()
-local function FWPAH_fake_script() -- Blocks.BlocksHighlight 
+coroutine.wrap(NATDNH_fake_script)()
+local function TGYEOR_fake_script() -- Blocks.BlocksHighlight 
 	local script = Instance.new('LocalScript', Blocks)
 
 	local blocks = {
@@ -857,8 +857,8 @@ local function FWPAH_fake_script() -- Blocks.BlocksHighlight
 	end)
 	
 end
-coroutine.wrap(FWPAH_fake_script)()
-local function PVVH_fake_script() -- FoodPacks.FoodPackHighlight 
+coroutine.wrap(TGYEOR_fake_script)()
+local function WNHYHHW_fake_script() -- FoodPacks.FoodPackHighlight 
 	local script = Instance.new('LocalScript', FoodPacks)
 
 	local function getAllFoodPacks()
@@ -928,8 +928,8 @@ local function PVVH_fake_script() -- FoodPacks.FoodPackHighlight
 	end)
 	
 end
-coroutine.wrap(PVVH_fake_script)()
-local function ZUUEQR_fake_script() -- Fuses.FusesHighlight 
+coroutine.wrap(WNHYHHW_fake_script)()
+local function OYYQS_fake_script() -- Fuses.FusesHighlight 
 	local script = Instance.new('LocalScript', Fuses)
 
 	local fuses = {
@@ -975,8 +975,8 @@ local function ZUUEQR_fake_script() -- Fuses.FusesHighlight
 	end)
 	
 end
-coroutine.wrap(ZUUEQR_fake_script)()
-local function JNVEDDD_fake_script() -- Batteries.BatteriesHighlight 
+coroutine.wrap(OYYQS_fake_script)()
+local function XWMF_fake_script() -- Batteries.BatteriesHighlight 
 	local script = Instance.new('LocalScript', Batteries)
 
 	local function getAllBatteries()
@@ -1046,8 +1046,8 @@ local function JNVEDDD_fake_script() -- Batteries.BatteriesHighlight
 	end)
 	
 end
-coroutine.wrap(JNVEDDD_fake_script)()
-local function LUCUJGQ_fake_script() -- Lightbulbs.LightbulbHighlight 
+coroutine.wrap(XWMF_fake_script)()
+local function BWIF_fake_script() -- Lightbulbs.LightbulbHighlight 
 	local script = Instance.new('LocalScript', Lightbulbs)
 
 	local function getAllLightBulbs()
@@ -1115,8 +1115,8 @@ local function LUCUJGQ_fake_script() -- Lightbulbs.LightbulbHighlight
 	end)
 	
 end
-coroutine.wrap(LUCUJGQ_fake_script)()
-local function KGMAJT_fake_script() -- GasCanisters.GasCanisterHighlight 
+coroutine.wrap(BWIF_fake_script)()
+local function AQJR_fake_script() -- GasCanisters.GasCanisterHighlight 
 	local script = Instance.new('LocalScript', GasCanisters)
 
 	local function getAllGasCanisters()
@@ -1186,8 +1186,8 @@ local function KGMAJT_fake_script() -- GasCanisters.GasCanisterHighlight
 	end)
 	
 end
-coroutine.wrap(KGMAJT_fake_script)()
-local function KTGMR_fake_script() -- SugarPacks.PurpleHighlight 
+coroutine.wrap(AQJR_fake_script)()
+local function PCSWZA_fake_script() -- SugarPacks.PurpleHighlight 
 	local script = Instance.new('LocalScript', SugarPacks)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1212,8 +1212,8 @@ local function KTGMR_fake_script() -- SugarPacks.PurpleHighlight
 	end)
 	
 end
-coroutine.wrap(KTGMR_fake_script)()
-local function TGDCRX_fake_script() -- TopBar_3.DragControl 
+coroutine.wrap(PCSWZA_fake_script)()
+local function ESDKXU_fake_script() -- TopBar_3.DragControl 
 	local script = Instance.new('LocalScript', TopBar_3)
 
 	local frame = script.Parent.Parent
@@ -1221,8 +1221,8 @@ local function TGDCRX_fake_script() -- TopBar_3.DragControl
 	frame.Draggable = true
 	
 end
-coroutine.wrap(TGDCRX_fake_script)()
-local function JTPJZJ_fake_script() -- Close_3.LocalScript 
+coroutine.wrap(ESDKXU_fake_script)()
+local function IOYP_fake_script() -- Close_3.LocalScript 
 	local script = Instance.new('LocalScript', Close_3)
 
 	local HighlightList = script.Parent.Parent.Parent
@@ -1231,8 +1231,8 @@ local function JTPJZJ_fake_script() -- Close_3.LocalScript
 		HighlightList.Visible = false
 	end)
 end
-coroutine.wrap(JTPJZJ_fake_script)()
-local function FGFV_fake_script() -- AddHighlightToBlue.BlueHighlight 
+coroutine.wrap(IOYP_fake_script)()
+local function UVYB_fake_script() -- AddHighlightToBlue.BlueHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToBlue)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1257,8 +1257,8 @@ local function FGFV_fake_script() -- AddHighlightToBlue.BlueHighlight
 	end)
 	
 end
-coroutine.wrap(FGFV_fake_script)()
-local function SJTQZX_fake_script() -- AddHighlightToGreen.GreenHighlight 
+coroutine.wrap(UVYB_fake_script)()
+local function KHSKH_fake_script() -- AddHighlightToGreen.GreenHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToGreen)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1283,8 +1283,8 @@ local function SJTQZX_fake_script() -- AddHighlightToGreen.GreenHighlight
 	end)
 	
 end
-coroutine.wrap(SJTQZX_fake_script)()
-local function QUAR_fake_script() -- AddHighlightToOrange.OrangeHighlight 
+coroutine.wrap(KHSKH_fake_script)()
+local function WIFKUY_fake_script() -- AddHighlightToOrange.OrangeHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToOrange)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1309,8 +1309,8 @@ local function QUAR_fake_script() -- AddHighlightToOrange.OrangeHighlight
 	end)
 	
 end
-coroutine.wrap(QUAR_fake_script)()
-local function CXMBOI_fake_script() -- AddHighlightToPurple.PurpleHighlight 
+coroutine.wrap(WIFKUY_fake_script)()
+local function FRRWXE_fake_script() -- AddHighlightToPurple.PurpleHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToPurple)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1335,8 +1335,8 @@ local function CXMBOI_fake_script() -- AddHighlightToPurple.PurpleHighlight
 	end)
 	
 end
-coroutine.wrap(CXMBOI_fake_script)()
-local function UJUJYYT_fake_script() -- AddHighlightToYellow.YellowHighlight 
+coroutine.wrap(FRRWXE_fake_script)()
+local function ZAIRL_fake_script() -- AddHighlightToYellow.YellowHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToYellow)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1361,8 +1361,8 @@ local function UJUJYYT_fake_script() -- AddHighlightToYellow.YellowHighlight
 	end)
 	
 end
-coroutine.wrap(UJUJYYT_fake_script)()
-local function NAZPBPE_fake_script() -- AddHighlightToCyan.CyanHighlight 
+coroutine.wrap(ZAIRL_fake_script)()
+local function QVXATEQ_fake_script() -- AddHighlightToCyan.CyanHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToCyan)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1387,8 +1387,8 @@ local function NAZPBPE_fake_script() -- AddHighlightToCyan.CyanHighlight
 	end)
 	
 end
-coroutine.wrap(NAZPBPE_fake_script)()
-local function BQSKB_fake_script() -- ALLOW.LocalScript 
+coroutine.wrap(QVXATEQ_fake_script)()
+local function JAPRL_fake_script() -- ALLOW.LocalScript 
 	local script = Instance.new('LocalScript', ALLOW)
 
 	function TERMINATE()
@@ -1401,8 +1401,8 @@ local function BQSKB_fake_script() -- ALLOW.LocalScript
 	
 	
 end
-coroutine.wrap(BQSKB_fake_script)()
-local function GLUA_fake_script() -- DENY.LocalScript 
+coroutine.wrap(JAPRL_fake_script)()
+local function STBPGVT_fake_script() -- DENY.LocalScript 
 	local script = Instance.new('LocalScript', DENY)
 
 	local CloseMenu = script.Parent.Parent.Parent
@@ -1412,4 +1412,4 @@ local function GLUA_fake_script() -- DENY.LocalScript
 	end)
 	
 end
-coroutine.wrap(GLUA_fake_script)()
+coroutine.wrap(STBPGVT_fake_script)()
