@@ -97,6 +97,7 @@ local UICorner_35 = Instance.new("UICorner")
 
 ra1nb0wUI.Name = "ra1nb0wUI"
 ra1nb0wUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ra1nb0wUI.Enabled = false
 ra1nb0wUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainFrame.Name = "MainFrame"
@@ -727,81 +728,81 @@ UICorner_35.Parent = MonstersHighlightList
 
 -- Scripts:
 
-local function NOGFB_fake_script() -- OpenItemHighlightList.LocalScript 
+local function JSTYUI_fake_script() -- OpenItemHighlightList.LocalScript 
 	local script = Instance.new('LocalScript', OpenItemHighlightList)
 
 	local ItemsHighlightList = script.Parent.Parent.Parent.ItemsHighlightList
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		ItemsHighlightList.Visible = true
 	end)
-
+	
 end
-coroutine.wrap(NOGFB_fake_script)()
+coroutine.wrap(JSTYUI_fake_script)()
 -- OpenLookyHighlightList.OpenHighlightList is disabled.
-local function ILVXVU_fake_script() -- CloseAllTabs.OpenHighlightList 
+local function LQCUHZE_fake_script() -- CloseAllTabs.OpenHighlightList 
 	local script = Instance.new('LocalScript', CloseAllTabs)
 
 	local Tab1 = script.Parent.Parent.Parent.MonstersHighlightList
 	local Tab2 = script.Parent.Parent.Parent.ItemsHighlightList
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		Tab1.Visible = false
 		Tab2.Visible = false
 	end)
-
+	
 end
-coroutine.wrap(ILVXVU_fake_script)()
-local function WLMZUYQ_fake_script() -- TopBar.DragControl 
+coroutine.wrap(LQCUHZE_fake_script)()
+local function DHSOG_fake_script() -- TopBar.DragControl 
 	local script = Instance.new('LocalScript', TopBar)
 
 	local frame = script.Parent.Parent
 	frame.Active = true
 	frame.Draggable = true
-
+	
 end
-coroutine.wrap(WLMZUYQ_fake_script)()
-local function APIJO_fake_script() -- Close.LocalScript 
+coroutine.wrap(DHSOG_fake_script)()
+local function IIVRYAX_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local CloseMenu = script.Parent.Parent.Parent.Parent.CloseMenu
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		CloseMenu.Visible = true
 	end)
 end
-coroutine.wrap(APIJO_fake_script)()
-local function BDLMF_fake_script() -- OpenMonstersHighlightList.OpenHighlightList 
+coroutine.wrap(IIVRYAX_fake_script)()
+local function LYZDNGM_fake_script() -- OpenMonstersHighlightList.OpenHighlightList 
 	local script = Instance.new('LocalScript', OpenMonstersHighlightList)
 
 	local MonstersHighlightList = script.Parent.Parent.Parent.MonstersHighlightList
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		MonstersHighlightList.Visible = true
 	end)
-
+	
 end
-coroutine.wrap(BDLMF_fake_script)()
-local function PCFRA_fake_script() -- TopBar_2.DragControl 
+coroutine.wrap(LYZDNGM_fake_script)()
+local function ANQGNN_fake_script() -- TopBar_2.DragControl 
 	local script = Instance.new('LocalScript', TopBar_2)
 
 	local frame = script.Parent.Parent
 	frame.Active = true
 	frame.Draggable = true
-
+	
 end
-coroutine.wrap(PCFRA_fake_script)()
-local function ZTHRNX_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(ANQGNN_fake_script)()
+local function GHRTXN_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local HighlightList = script.Parent.Parent.Parent
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		HighlightList.Visible = false
 	end)
 end
-coroutine.wrap(ZTHRNX_fake_script)()
-local function PQKAP_fake_script() -- Blocks.BlocksHighlight 
+coroutine.wrap(GHRTXN_fake_script)()
+local function IOSFMM_fake_script() -- Blocks.BlocksHighlight 
 	local script = Instance.new('LocalScript', Blocks)
 
 	local blocks = {
@@ -830,10 +831,10 @@ local function PQKAP_fake_script() -- Blocks.BlocksHighlight
 		game.Workspace:FindFirstChild("Block23"),
 		game.Workspace:FindFirstChild("Block24")
 	}
-
+	
 	local function AddHighlight()
 		local highlightedCount = 0
-
+		
 		for _, block in ipairs(blocks) do
 			if block and (block:IsA("Model") or block:IsA("BasePart")) then
 				local highlight = Instance.new("Highlight")
@@ -847,23 +848,23 @@ local function PQKAP_fake_script() -- Blocks.BlocksHighlight
 				highlightedCount = highlightedCount + 1
 			end
 		end
-
+		
 		return highlightedCount
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		local highlightedCount = AddHighlight()
 		print("Highlighted " .. highlightedCount .. " blocks")
 	end)
-
+	
 end
-coroutine.wrap(PQKAP_fake_script)()
-local function LWNSE_fake_script() -- FoodPacks.FoodPackHighlight 
+coroutine.wrap(IOSFMM_fake_script)()
+local function NZWV_fake_script() -- FoodPacks.FoodPackHighlight 
 	local script = Instance.new('LocalScript', FoodPacks)
 
 	local function getAllFoodPacks()
 		local foodPacks = {}
-
+		
 		-- Check direct children of Workspace first
 		for _, child in ipairs(game.Workspace:GetChildren()) do
 			local name = string.lower(child.Name)
@@ -871,7 +872,7 @@ local function LWNSE_fake_script() -- FoodPacks.FoodPackHighlight
 				table.insert(foodPacks, child)
 			end
 		end
-
+		
 		-- Also check descendants in case food packs are nested
 		for _, descendant in game.Workspace:GetDescendants() do
 			local name = string.lower(descendant.Name)
@@ -884,20 +885,20 @@ local function LWNSE_fake_script() -- FoodPacks.FoodPackHighlight
 						break
 					end
 				end
-
+				
 				if not alreadyAdded then
 					table.insert(foodPacks, descendant)
 				end
 			end
 		end
-
+		
 		return foodPacks
 	end
-
+	
 	local function AddHighlight()
 		local foodPacks = getAllFoodPacks()
 		local highlightedCount = 0
-
+	
 		for _, foodPack in ipairs(foodPacks) do
 			if foodPack then
 				-- Remove any existing highlights to avoid duplicates
@@ -906,7 +907,7 @@ local function LWNSE_fake_script() -- FoodPacks.FoodPackHighlight
 						child:Destroy()
 					end
 				end
-
+				
 				local highlight = Instance.new("Highlight")
 				highlight.Parent = foodPack
 				highlight.FillTransparency = 0.7
@@ -918,18 +919,18 @@ local function LWNSE_fake_script() -- FoodPacks.FoodPackHighlight
 				highlightedCount = highlightedCount + 1
 			end
 		end
-
+	
 		return highlightedCount
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		local highlightedCount = AddHighlight()
 		print("Highlighted " .. highlightedCount .. " Food Packs")
 	end)
-
+	
 end
-coroutine.wrap(LWNSE_fake_script)()
-local function SEBUB_fake_script() -- Fuses.FusesHighlight 
+coroutine.wrap(NZWV_fake_script)()
+local function KZDZFNL_fake_script() -- Fuses.FusesHighlight 
 	local script = Instance.new('LocalScript', Fuses)
 
 	local fuses = {
@@ -948,10 +949,10 @@ local function SEBUB_fake_script() -- Fuses.FusesHighlight
 		game.Workspace:FindFirstChild("Fuse13"),
 		game.Workspace:FindFirstChild("Fuse14"),
 	}
-
+	
 	local function AddHighlight()
 		local highlightedCount = 0
-
+	
 		for _, fuses in ipairs(fuses) do
 			if fuses and (fuses:IsA("Model") or fuses:IsA("BasePart")) then
 				local highlight = Instance.new("Highlight")
@@ -965,23 +966,23 @@ local function SEBUB_fake_script() -- Fuses.FusesHighlight
 				highlightedCount = highlightedCount + 1
 			end
 		end
-
+	
 		return highlightedCount
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		local highlightedCount = AddHighlight()
 		print("Highlighted " .. highlightedCount .. " blocks")
 	end)
-
+	
 end
-coroutine.wrap(SEBUB_fake_script)()
-local function NFMGM_fake_script() -- Batteries.BatteriesHighlight 
+coroutine.wrap(KZDZFNL_fake_script)()
+local function QIZS_fake_script() -- Batteries.BatteriesHighlight 
 	local script = Instance.new('LocalScript', Batteries)
 
 	local function getAllBatteries()
 		local batteries = {}
-
+	
 		-- Check direct children of Workspace first
 		for _, child in ipairs(game.Workspace:GetChildren()) do
 			local name = string.lower(child.Name)
@@ -989,7 +990,7 @@ local function NFMGM_fake_script() -- Batteries.BatteriesHighlight
 				table.insert(batteries, child)
 			end
 		end
-
+	
 		-- Also check descendants in case batteries are nested
 		for _, descendant in game.Workspace:GetDescendants() do
 			local name = string.lower(descendant.Name)
@@ -1002,20 +1003,20 @@ local function NFMGM_fake_script() -- Batteries.BatteriesHighlight
 						break
 					end
 				end
-
+	
 				if not alreadyAdded then
 					table.insert(batteries, descendant)
 				end
 			end
 		end
-
+	
 		return batteries
 	end
-
+	
 	local function AddHighlight()
 		local batteries = getAllBatteries()
 		local highlightedCount = 0
-
+	
 		for _, batteries in ipairs(batteries) do
 			if batteries then
 				-- Remove any existing highlights to avoid duplicates
@@ -1024,7 +1025,7 @@ local function NFMGM_fake_script() -- Batteries.BatteriesHighlight
 						child:Destroy()
 					end
 				end
-
+	
 				local highlight = Instance.new("Highlight")
 				highlight.Parent = batteries
 				highlight.FillTransparency = 0.7
@@ -1036,30 +1037,30 @@ local function NFMGM_fake_script() -- Batteries.BatteriesHighlight
 				highlightedCount = highlightedCount + 1
 			end
 		end
-
+	
 		return highlightedCount
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		local highlightedCount = AddHighlight()
 		print("Highlighted " .. highlightedCount .. " Batteries")
 	end)
-
+	
 end
-coroutine.wrap(NFMGM_fake_script)()
-local function TRPCA_fake_script() -- Lightbulbs.LightbulbHighlight 
+coroutine.wrap(QIZS_fake_script)()
+local function KRTX_fake_script() -- Lightbulbs.LightbulbHighlight 
 	local script = Instance.new('LocalScript', Lightbulbs)
 
 	local function getAllLightBulbs()
 		local lightBulbs = {}
-
+	
 		-- Check direct children of Workspace first
 		for _, child in ipairs(game.Workspace:GetChildren()) do
 			if child.Name == "LightBulb" and child:IsA("Model") then
 				table.insert(lightBulbs, child)
 			end
 		end
-
+	
 		-- Also check descendants in case light bulbs are nested
 		for _, descendant in game.Workspace:GetDescendants() do
 			if descendant.Name == "LightBulb" and descendant:IsA("Model") then
@@ -1071,20 +1072,20 @@ local function TRPCA_fake_script() -- Lightbulbs.LightbulbHighlight
 						break
 					end
 				end
-
+	
 				if not alreadyAdded then
 					table.insert(lightBulbs, descendant)
 				end
 			end
 		end
-
+	
 		return lightBulbs
 	end
-
+	
 	local function AddHighlight()
 		local lightBulbs = getAllLightBulbs()
 		local highlightedCount = 0
-
+	
 		for _, lightBulb in ipairs(lightBulbs) do
 			if lightBulb then
 				-- Remove any existing highlights to avoid duplicates
@@ -1093,7 +1094,7 @@ local function TRPCA_fake_script() -- Lightbulbs.LightbulbHighlight
 						child:Destroy()
 					end
 				end
-
+	
 				local highlight = Instance.new("Highlight")
 				highlight.Parent = lightBulb
 				highlight.FillTransparency = 0.7
@@ -1105,23 +1106,23 @@ local function TRPCA_fake_script() -- Lightbulbs.LightbulbHighlight
 				highlightedCount = highlightedCount + 1
 			end
 		end
-
+	
 		return highlightedCount
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		local highlightedCount = AddHighlight()
 		print("Highlighted " .. highlightedCount .. " LightBulbs")
 	end)
-
+	
 end
-coroutine.wrap(TRPCA_fake_script)()
-local function EQQM_fake_script() -- GasCanisters.GasCanisterHighlight 
+coroutine.wrap(KRTX_fake_script)()
+local function WTPDYW_fake_script() -- GasCanisters.GasCanisterHighlight 
 	local script = Instance.new('LocalScript', GasCanisters)
 
 	local function getAllGasCanisters()
 		local gasCanister = {}
-
+	
 		-- Check direct children of Workspace first
 		for _, child in ipairs(game.Workspace:GetChildren()) do
 			local name = string.lower(child.Name)
@@ -1129,7 +1130,7 @@ local function EQQM_fake_script() -- GasCanisters.GasCanisterHighlight
 				table.insert(gasCanister, child)
 			end
 		end
-
+	
 		-- Also check descendants in case food packs are nested
 		for _, descendant in game.Workspace:GetDescendants() do
 			local name = string.lower(descendant.Name)
@@ -1142,20 +1143,20 @@ local function EQQM_fake_script() -- GasCanisters.GasCanisterHighlight
 						break
 					end
 				end
-
+	
 				if not alreadyAdded then
 					table.insert(gasCanister, descendant)
 				end
 			end
 		end
-
+	
 		return gasCanister
 	end
-
+	
 	local function AddHighlight()
 		local gasCanister = getAllGasCanisters()
 		local highlightedCount = 0
-
+	
 		for _, gasCanister in ipairs(gasCanister) do
 			if gasCanister then
 				-- Remove any existing highlights to avoid duplicates
@@ -1164,7 +1165,7 @@ local function EQQM_fake_script() -- GasCanisters.GasCanisterHighlight
 						child:Destroy()
 					end
 				end
-
+	
 				local highlight = Instance.new("Highlight")
 				highlight.Parent = gasCanister
 				highlight.FillTransparency = 0.7
@@ -1176,24 +1177,24 @@ local function EQQM_fake_script() -- GasCanisters.GasCanisterHighlight
 				highlightedCount = highlightedCount + 1
 			end
 		end
-
+	
 		return highlightedCount
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		local highlightedCount = AddHighlight()
 		print("Highlighted " .. highlightedCount .. " Gas Canisters")
 	end)
-
+	
 end
-coroutine.wrap(EQQM_fake_script)()
-local function VZTWLA_fake_script() -- SugarPacks.PurpleHighlight 
+coroutine.wrap(WTPDYW_fake_script)()
+local function OUHYU_fake_script() -- SugarPacks.PurpleHighlight 
 	local script = Instance.new('LocalScript', SugarPacks)
 
 	local MonsterFolder = game.Workspace.Monsters
-
+	
 	local Purple = game.Workspace.Monsters.Purple
-
+	
 	function AddHighlight()
 		local Highlight = Instance.new("Highlight", Purple)
 		Highlight.FillTransparency = 0.7
@@ -1203,67 +1204,67 @@ local function VZTWLA_fake_script() -- SugarPacks.PurpleHighlight
 		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 		Highlight.Enabled = true
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		if Purple:IsA("Model") then
 			local MonstersFolder = game.Workspace.Monsters
 			AddHighlight()
 		end
 	end)
-
+	
 end
-coroutine.wrap(VZTWLA_fake_script)()
-local function DZARY_fake_script() -- ALLOW.LocalScript 
+coroutine.wrap(OUHYU_fake_script)()
+local function ZUMEHCW_fake_script() -- ALLOW.LocalScript 
 	local script = Instance.new('LocalScript', ALLOW)
 
 	function TERMINATE()
 		script.Parent.Parent.Parent.Parent:Destroy()
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		TERMINATE()
 	end)
-
-
+	
+	
 end
-coroutine.wrap(DZARY_fake_script)()
-local function ZFSOGM_fake_script() -- DENY.LocalScript 
+coroutine.wrap(ZUMEHCW_fake_script)()
+local function LVJOVV_fake_script() -- DENY.LocalScript 
 	local script = Instance.new('LocalScript', DENY)
 
 	local CloseMenu = script.Parent.Parent.Parent
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		CloseMenu.Visible = false
 	end)
-
+	
 end
-coroutine.wrap(ZFSOGM_fake_script)()
-local function BGVNDA_fake_script() -- TopBar_3.DragControl 
+coroutine.wrap(LVJOVV_fake_script)()
+local function YTCWR_fake_script() -- TopBar_3.DragControl 
 	local script = Instance.new('LocalScript', TopBar_3)
 
 	local frame = script.Parent.Parent
 	frame.Active = true
 	frame.Draggable = true
-
+	
 end
-coroutine.wrap(BGVNDA_fake_script)()
-local function BTVM_fake_script() -- Close_3.LocalScript 
+coroutine.wrap(YTCWR_fake_script)()
+local function CQMH_fake_script() -- Close_3.LocalScript 
 	local script = Instance.new('LocalScript', Close_3)
 
 	local HighlightList = script.Parent.Parent.Parent
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		HighlightList.Visible = false
 	end)
 end
-coroutine.wrap(BTVM_fake_script)()
-local function TIJSO_fake_script() -- AddHighlightToBlue.BlueHighlight 
+coroutine.wrap(CQMH_fake_script)()
+local function CNSGZ_fake_script() -- AddHighlightToBlue.BlueHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToBlue)
 
 	local MonsterFolder = game.Workspace.Monsters
-
+	
 	local Blue = game.Workspace.Monsters.Blue
-
+	
 	function AddHighlight()
 		local Highlight = Instance.new("Highlight", Blue)
 		Highlight.FillTransparency = 0.7
@@ -1273,23 +1274,23 @@ local function TIJSO_fake_script() -- AddHighlightToBlue.BlueHighlight
 		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 		Highlight.Enabled = true
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		if Blue:IsA("Model") then
 			local MonstersFolder = game.Workspace.Monsters
 			AddHighlight()
 		end
 	end)
-
+	
 end
-coroutine.wrap(TIJSO_fake_script)()
-local function APKD_fake_script() -- AddHighlightToGreen.GreenHighlight 
+coroutine.wrap(CNSGZ_fake_script)()
+local function GZRHUDU_fake_script() -- AddHighlightToGreen.GreenHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToGreen)
 
 	local MonsterFolder = game.Workspace.Monsters
-
+	
 	local Green = game.Workspace.Monsters.Green
-
+	
 	function AddHighlight()
 		local Highlight = Instance.new("Highlight", Green)
 		Highlight.FillTransparency = 0.7
@@ -1299,23 +1300,23 @@ local function APKD_fake_script() -- AddHighlightToGreen.GreenHighlight
 		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 		Highlight.Enabled = true
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		if Green:IsA("Model") then
 			local MonstersFolder = game.Workspace.Monsters
 			AddHighlight()
 		end
 	end)
-
+	
 end
-coroutine.wrap(APKD_fake_script)()
-local function TFGR_fake_script() -- AddHighlightToOrange.OrangeHighlight 
+coroutine.wrap(GZRHUDU_fake_script)()
+local function STFEJ_fake_script() -- AddHighlightToOrange.OrangeHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToOrange)
 
 	local MonsterFolder = game.Workspace.Monsters
-
+	
 	local Orange = game.Workspace.Monsters.Orange
-
+	
 	function AddHighlight()
 		local Highlight = Instance.new("Highlight", Orange)
 		Highlight.FillTransparency = 0.7
@@ -1325,23 +1326,23 @@ local function TFGR_fake_script() -- AddHighlightToOrange.OrangeHighlight
 		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 		Highlight.Enabled = true
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		if Orange:IsA("Model") then
 			local MonstersFolder = game.Workspace.Monsters
 			AddHighlight()
 		end
 	end)
-
+	
 end
-coroutine.wrap(TFGR_fake_script)()
-local function PBVT_fake_script() -- AddHighlightToPurple.PurpleHighlight 
+coroutine.wrap(STFEJ_fake_script)()
+local function HEYTN_fake_script() -- AddHighlightToPurple.PurpleHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToPurple)
 
 	local MonsterFolder = game.Workspace.Monsters
-
+	
 	local Purple = game.Workspace.Monsters.Purple
-
+	
 	function AddHighlight()
 		local Highlight = Instance.new("Highlight", Purple)
 		Highlight.FillTransparency = 0.7
@@ -1351,23 +1352,23 @@ local function PBVT_fake_script() -- AddHighlightToPurple.PurpleHighlight
 		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 		Highlight.Enabled = true
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		if Purple:IsA("Model") then
 			local MonstersFolder = game.Workspace.Monsters
 			AddHighlight()
 		end
 	end)
-
+	
 end
-coroutine.wrap(PBVT_fake_script)()
-local function SAYG_fake_script() -- AddHighlightToYellow.YellowHighlight 
+coroutine.wrap(HEYTN_fake_script)()
+local function GKVSP_fake_script() -- AddHighlightToYellow.YellowHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToYellow)
 
 	local MonsterFolder = game.Workspace.Monsters
-
+	
 	local Yellow = game.Workspace.Monsters.Bird
-
+	
 	function AddHighlight()
 		local Highlight = Instance.new("Highlight", Yellow)
 		Highlight.FillTransparency = 0.7
@@ -1377,23 +1378,23 @@ local function SAYG_fake_script() -- AddHighlightToYellow.YellowHighlight
 		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 		Highlight.Enabled = true
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		if Yellow:IsA("Model") then
 			local MonstersFolder = game.Workspace.Monsters
 			AddHighlight()
 		end
 	end)
-
+	
 end
-coroutine.wrap(SAYG_fake_script)()
-local function KTZYI_fake_script() -- AddHighlightToCyan.CyanHighlight 
+coroutine.wrap(GKVSP_fake_script)()
+local function VVVY_fake_script() -- AddHighlightToCyan.CyanHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToCyan)
 
 	local MonsterFolder = game.Workspace.Monsters
-
+	
 	local Cyan = game.Workspace.Monsters.Cyan
-
+	
 	function AddHighlight()
 		local Highlight = Instance.new("Highlight", Cyan)
 		Highlight.FillTransparency = 0.7
@@ -1403,13 +1404,13 @@ local function KTZYI_fake_script() -- AddHighlightToCyan.CyanHighlight
 		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 		Highlight.Enabled = true
 	end
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		if Cyan:IsA("Model") then
 			local MonstersFolder = game.Workspace.Monsters
 			AddHighlight()
 		end
 	end)
-
+	
 end
-coroutine.wrap(KTZYI_fake_script)()
+coroutine.wrap(VVVY_fake_script)()
