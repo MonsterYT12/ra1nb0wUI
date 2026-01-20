@@ -55,42 +55,42 @@ local UICorner_18 = Instance.new("UICorner")
 local SugarPacks = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
-local MonstersHighlightList = Instance.new("Frame")
-local TextLabel_5 = Instance.new("TextLabel")
+local CloseMenu = Instance.new("Frame")
 local UICorner_20 = Instance.new("UICorner")
-local TextLabel_6 = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
 local UICorner_21 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_22 = Instance.new("UICorner")
+local ALLOW = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local DENY = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local MonstersHighlightList = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local UICorner_25 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local UICorner_26 = Instance.new("UICorner")
 local TopBar_3 = Instance.new("Frame")
 local UIGradient_10 = Instance.new("UIGradient")
-local UICorner_22 = Instance.new("UICorner")
-local TextLabel_7 = Instance.new("TextLabel")
-local UICorner_23 = Instance.new("UICorner")
+local UICorner_27 = Instance.new("UICorner")
+local TextLabel_8 = Instance.new("TextLabel")
+local UICorner_28 = Instance.new("UICorner")
 local Close_3 = Instance.new("TextButton")
 local Chapter1_2 = Instance.new("Folder")
 local AddHighlightToBlue = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
+local UICorner_29 = Instance.new("UICorner")
 local AddHighlightToGreen = Instance.new("TextButton")
-local UICorner_25 = Instance.new("UICorner")
+local UICorner_30 = Instance.new("UICorner")
 local AddHighlightToOrange = Instance.new("TextButton")
-local UICorner_26 = Instance.new("UICorner")
+local UICorner_31 = Instance.new("UICorner")
 local Chapter2_2 = Instance.new("Folder")
 local AddHighlightToPurple = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
-local AddHighlightToYellow = Instance.new("TextButton")
-local UICorner_28 = Instance.new("UICorner")
-local AddHighlightToCyan = Instance.new("TextButton")
-local UICorner_29 = Instance.new("UICorner")
-local UIGradient_11 = Instance.new("UIGradient")
-local UICorner_30 = Instance.new("UICorner")
-local CloseMenu = Instance.new("Frame")
-local UICorner_31 = Instance.new("UICorner")
-local Frame = Instance.new("Frame")
 local UICorner_32 = Instance.new("UICorner")
-local TextLabel_8 = Instance.new("TextLabel")
+local AddHighlightToYellow = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
-local ALLOW = Instance.new("TextButton")
+local AddHighlightToCyan = Instance.new("TextButton")
 local UICorner_34 = Instance.new("UICorner")
-local DENY = Instance.new("TextButton")
+local UIGradient_11 = Instance.new("UIGradient")
 local UICorner_35 = Instance.new("UICorner")
 
 --Properties:
@@ -454,6 +454,79 @@ UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fr
 UIGradient_9.Rotation = 90
 UIGradient_9.Parent = SugarPacks
 
+CloseMenu.Name = "CloseMenu"
+CloseMenu.Parent = ra1nb0wUI
+CloseMenu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CloseMenu.BackgroundTransparency = 0.700
+CloseMenu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseMenu.BorderSizePixel = 0
+CloseMenu.Position = UDim2.new(0.35800001, 0, 0.314999998, 0)
+CloseMenu.Size = UDim2.new(0, 380, 0, 253)
+CloseMenu.Visible = false
+
+UICorner_20.CornerRadius = UDim.new(0, 16)
+UICorner_20.Parent = CloseMenu
+
+Frame.Parent = CloseMenu
+Frame.BackgroundColor3 = Color3.fromRGB(134, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.186842099, 0, 0.264822304, 0)
+Frame.Size = UDim2.new(0, 235, 0, 150)
+
+UICorner_21.CornerRadius = UDim.new(0, 16)
+UICorner_21.Parent = Frame
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0851063803, 0, 0.109764814, 0)
+TextLabel_5.Size = UDim2.new(0, 194, 0, 46)
+TextLabel_5.Font = Enum.Font.GothamMedium
+TextLabel_5.Text = "Are you sure you want to exit?"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextStrokeTransparency = 0.000
+TextLabel_5.TextWrapped = true
+
+UICorner_22.Parent = TextLabel_5
+
+ALLOW.Name = "ALLOW"
+ALLOW.Parent = Frame
+ALLOW.BackgroundColor3 = Color3.fromRGB(86, 0, 3)
+ALLOW.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ALLOW.BorderSizePixel = 0
+ALLOW.Position = UDim2.new(0.076595746, 0, 0.593333304, 0)
+ALLOW.Size = UDim2.new(0, 87, 0, 35)
+ALLOW.Font = Enum.Font.Gotham
+ALLOW.Text = "YES"
+ALLOW.TextColor3 = Color3.fromRGB(170, 0, 0)
+ALLOW.TextScaled = true
+ALLOW.TextSize = 14.000
+ALLOW.TextStrokeTransparency = 0.000
+ALLOW.TextWrapped = true
+
+UICorner_23.Parent = ALLOW
+
+DENY.Name = "DENY"
+DENY.Parent = Frame
+DENY.BackgroundColor3 = Color3.fromRGB(86, 0, 3)
+DENY.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DENY.BorderSizePixel = 0
+DENY.Position = UDim2.new(0.565957427, 0, 0.593333304, 0)
+DENY.Size = UDim2.new(0, 87, 0, 35)
+DENY.Font = Enum.Font.Gotham
+DENY.Text = "NO"
+DENY.TextColor3 = Color3.fromRGB(40, 170, 0)
+DENY.TextScaled = true
+DENY.TextSize = 14.000
+DENY.TextStrokeTransparency = 0.000
+DENY.TextWrapped = true
+
+UICorner_24.Parent = DENY
+
 MonstersHighlightList.Name = "MonstersHighlightList"
 MonstersHighlightList.Parent = ra1nb0wUI
 MonstersHighlightList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -463,39 +536,39 @@ MonstersHighlightList.Position = UDim2.new(0.0351533294, 0, 0.269679308, 0)
 MonstersHighlightList.Size = UDim2.new(0, 378, 0, 316)
 MonstersHighlightList.Visible = false
 
-TextLabel_5.Parent = MonstersHighlightList
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 0.700
-TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Position = UDim2.new(0.147757277, 0, 0.190730378, 0)
-TextLabel_5.Size = UDim2.new(0, 267, 0, 43)
-TextLabel_5.Font = Enum.Font.GothamMedium
-TextLabel_5.Text = "Chapter 1"
-TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.TextScaled = true
-TextLabel_5.TextSize = 14.000
-TextLabel_5.TextWrapped = true
-
-UICorner_20.CornerRadius = UDim.new(0, 16)
-UICorner_20.Parent = TextLabel_5
-
 TextLabel_6.Parent = MonstersHighlightList
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 0.700
 TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Position = UDim2.new(0.147757277, 0, 0.598061264, 0)
+TextLabel_6.Position = UDim2.new(0.147757277, 0, 0.190730378, 0)
 TextLabel_6.Size = UDim2.new(0, 267, 0, 43)
 TextLabel_6.Font = Enum.Font.GothamMedium
-TextLabel_6.Text = "Chapter 2"
+TextLabel_6.Text = "Chapter 1"
 TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_6.TextScaled = true
 TextLabel_6.TextSize = 14.000
 TextLabel_6.TextWrapped = true
 
-UICorner_21.CornerRadius = UDim.new(0, 16)
-UICorner_21.Parent = TextLabel_6
+UICorner_25.CornerRadius = UDim.new(0, 16)
+UICorner_25.Parent = TextLabel_6
+
+TextLabel_7.Parent = MonstersHighlightList
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 0.700
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.147757277, 0, 0.598061264, 0)
+TextLabel_7.Size = UDim2.new(0, 267, 0, 43)
+TextLabel_7.Font = Enum.Font.GothamMedium
+TextLabel_7.Text = "Chapter 2"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+UICorner_26.CornerRadius = UDim.new(0, 16)
+UICorner_26.Parent = TextLabel_7
 
 TopBar_3.Name = "TopBar"
 TopBar_3.Parent = MonstersHighlightList
@@ -508,25 +581,25 @@ TopBar_3.Size = UDim2.new(0, 379, 0, 43)
 UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(111, 0, 0)), ColorSequenceKeypoint.new(0.18, Color3.fromRGB(196, 105, 0)), ColorSequenceKeypoint.new(0.34, Color3.fromRGB(196, 157, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 180, 6)), ColorSequenceKeypoint.new(0.67, Color3.fromRGB(0, 50, 126)), ColorSequenceKeypoint.new(0.85, Color3.fromRGB(54, 0, 77)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(45, 0, 85))}
 UIGradient_10.Parent = TopBar_3
 
-UICorner_22.CornerRadius = UDim.new(0, 16)
-UICorner_22.Parent = TopBar_3
+UICorner_27.CornerRadius = UDim.new(0, 16)
+UICorner_27.Parent = TopBar_3
 
-TextLabel_7.Parent = TopBar_3
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 0.700
-TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.BorderSizePixel = 0
-TextLabel_7.Position = UDim2.new(0, 0, 0.00786501821, 0)
-TextLabel_7.Size = UDim2.new(0, 267, 0, 43)
-TextLabel_7.Font = Enum.Font.GothamMedium
-TextLabel_7.Text = "Monster Highlight List"
-TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.TextScaled = true
-TextLabel_7.TextSize = 14.000
-TextLabel_7.TextWrapped = true
+TextLabel_8.Parent = TopBar_3
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 0.700
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0, 0, 0.00786501821, 0)
+TextLabel_8.Size = UDim2.new(0, 267, 0, 43)
+TextLabel_8.Font = Enum.Font.GothamMedium
+TextLabel_8.Text = "Monster Highlight List"
+TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
 
-UICorner_23.CornerRadius = UDim.new(0, 16)
-UICorner_23.Parent = TextLabel_7
+UICorner_28.CornerRadius = UDim.new(0, 16)
+UICorner_28.Parent = TextLabel_8
 
 Close_3.Name = "Close"
 Close_3.Parent = TopBar_3
@@ -561,7 +634,7 @@ AddHighlightToBlue.TextScaled = true
 AddHighlightToBlue.TextSize = 14.000
 AddHighlightToBlue.TextWrapped = true
 
-UICorner_24.Parent = AddHighlightToBlue
+UICorner_29.Parent = AddHighlightToBlue
 
 AddHighlightToGreen.Name = "AddHighlightToGreen"
 AddHighlightToGreen.Parent = Chapter1_2
@@ -577,7 +650,7 @@ AddHighlightToGreen.TextScaled = true
 AddHighlightToGreen.TextSize = 14.000
 AddHighlightToGreen.TextWrapped = true
 
-UICorner_25.Parent = AddHighlightToGreen
+UICorner_30.Parent = AddHighlightToGreen
 
 AddHighlightToOrange.Name = "AddHighlightToOrange"
 AddHighlightToOrange.Parent = Chapter1_2
@@ -593,7 +666,7 @@ AddHighlightToOrange.TextScaled = true
 AddHighlightToOrange.TextSize = 14.000
 AddHighlightToOrange.TextWrapped = true
 
-UICorner_26.Parent = AddHighlightToOrange
+UICorner_31.Parent = AddHighlightToOrange
 
 Chapter2_2.Name = "Chapter2"
 Chapter2_2.Parent = MonstersHighlightList
@@ -612,7 +685,7 @@ AddHighlightToPurple.TextScaled = true
 AddHighlightToPurple.TextSize = 14.000
 AddHighlightToPurple.TextWrapped = true
 
-UICorner_27.Parent = AddHighlightToPurple
+UICorner_32.Parent = AddHighlightToPurple
 
 AddHighlightToYellow.Name = "AddHighlightToYellow"
 AddHighlightToYellow.Parent = Chapter2_2
@@ -628,7 +701,7 @@ AddHighlightToYellow.TextScaled = true
 AddHighlightToYellow.TextSize = 14.000
 AddHighlightToYellow.TextWrapped = true
 
-UICorner_28.Parent = AddHighlightToYellow
+UICorner_33.Parent = AddHighlightToYellow
 
 AddHighlightToCyan.Name = "AddHighlightToCyan"
 AddHighlightToCyan.Parent = Chapter2_2
@@ -644,90 +717,17 @@ AddHighlightToCyan.TextScaled = true
 AddHighlightToCyan.TextSize = 14.000
 AddHighlightToCyan.TextWrapped = true
 
-UICorner_29.Parent = AddHighlightToCyan
+UICorner_34.Parent = AddHighlightToCyan
 
 UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 0, 0)), ColorSequenceKeypoint.new(0.18, Color3.fromRGB(255, 140, 0)), ColorSequenceKeypoint.new(0.34, Color3.fromRGB(255, 204, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 239, 8)), ColorSequenceKeypoint.new(0.67, Color3.fromRGB(0, 71, 185)), ColorSequenceKeypoint.new(0.85, Color3.fromRGB(97, 0, 136)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(77, 0, 144))}
 UIGradient_11.Parent = MonstersHighlightList
 
-UICorner_30.CornerRadius = UDim.new(0, 16)
-UICorner_30.Parent = MonstersHighlightList
-
-CloseMenu.Name = "CloseMenu"
-CloseMenu.Parent = ra1nb0wUI
-CloseMenu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-CloseMenu.BackgroundTransparency = 0.700
-CloseMenu.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CloseMenu.BorderSizePixel = 0
-CloseMenu.Position = UDim2.new(0.35800001, 0, 0.314999998, 0)
-CloseMenu.Size = UDim2.new(0, 380, 0, 253)
-CloseMenu.Visible = false
-
-UICorner_31.CornerRadius = UDim.new(0, 16)
-UICorner_31.Parent = CloseMenu
-
-Frame.Parent = CloseMenu
-Frame.BackgroundColor3 = Color3.fromRGB(134, 0, 0)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.186842099, 0, 0.264822304, 0)
-Frame.Size = UDim2.new(0, 235, 0, 150)
-
-UICorner_32.CornerRadius = UDim.new(0, 16)
-UICorner_32.Parent = Frame
-
-TextLabel_8.Parent = Frame
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_8.BorderSizePixel = 0
-TextLabel_8.Position = UDim2.new(0.0851063803, 0, 0.109764814, 0)
-TextLabel_8.Size = UDim2.new(0, 194, 0, 46)
-TextLabel_8.Font = Enum.Font.GothamMedium
-TextLabel_8.Text = "Are you sure you want to exit?"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextScaled = true
-TextLabel_8.TextSize = 14.000
-TextLabel_8.TextStrokeTransparency = 0.000
-TextLabel_8.TextWrapped = true
-
-UICorner_33.Parent = TextLabel_8
-
-ALLOW.Name = "ALLOW"
-ALLOW.Parent = Frame
-ALLOW.BackgroundColor3 = Color3.fromRGB(86, 0, 3)
-ALLOW.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ALLOW.BorderSizePixel = 0
-ALLOW.Position = UDim2.new(0.076595746, 0, 0.593333304, 0)
-ALLOW.Size = UDim2.new(0, 87, 0, 35)
-ALLOW.Font = Enum.Font.Gotham
-ALLOW.Text = "YES"
-ALLOW.TextColor3 = Color3.fromRGB(170, 0, 0)
-ALLOW.TextScaled = true
-ALLOW.TextSize = 14.000
-ALLOW.TextStrokeTransparency = 0.000
-ALLOW.TextWrapped = true
-
-UICorner_34.Parent = ALLOW
-
-DENY.Name = "DENY"
-DENY.Parent = Frame
-DENY.BackgroundColor3 = Color3.fromRGB(86, 0, 3)
-DENY.BorderColor3 = Color3.fromRGB(0, 0, 0)
-DENY.BorderSizePixel = 0
-DENY.Position = UDim2.new(0.565957427, 0, 0.593333304, 0)
-DENY.Size = UDim2.new(0, 87, 0, 35)
-DENY.Font = Enum.Font.Gotham
-DENY.Text = "NO"
-DENY.TextColor3 = Color3.fromRGB(40, 170, 0)
-DENY.TextScaled = true
-DENY.TextSize = 14.000
-DENY.TextStrokeTransparency = 0.000
-DENY.TextWrapped = true
-
-UICorner_35.Parent = DENY
+UICorner_35.CornerRadius = UDim.new(0, 16)
+UICorner_35.Parent = MonstersHighlightList
 
 -- Scripts:
 
-local function AKDSGAT_fake_script() -- OpenItemHighlightList.LocalScript 
+local function NOGFB_fake_script() -- OpenItemHighlightList.LocalScript 
 	local script = Instance.new('LocalScript', OpenItemHighlightList)
 
 	local ItemsHighlightList = script.Parent.Parent.Parent.ItemsHighlightList
@@ -737,9 +737,9 @@ local function AKDSGAT_fake_script() -- OpenItemHighlightList.LocalScript
 	end)
 	
 end
-coroutine.wrap(AKDSGAT_fake_script)()
+coroutine.wrap(NOGFB_fake_script)()
 -- OpenLookyHighlightList.OpenHighlightList is disabled.
-local function CRWTLPQ_fake_script() -- CloseAllTabs.OpenHighlightList 
+local function ILVXVU_fake_script() -- CloseAllTabs.OpenHighlightList 
 	local script = Instance.new('LocalScript', CloseAllTabs)
 
 	local Tab1 = script.Parent.Parent.Parent.MonstersHighlightList
@@ -751,8 +751,8 @@ local function CRWTLPQ_fake_script() -- CloseAllTabs.OpenHighlightList
 	end)
 	
 end
-coroutine.wrap(CRWTLPQ_fake_script)()
-local function PCDYEHD_fake_script() -- TopBar.DragControl 
+coroutine.wrap(ILVXVU_fake_script)()
+local function WLMZUYQ_fake_script() -- TopBar.DragControl 
 	local script = Instance.new('LocalScript', TopBar)
 
 	local frame = script.Parent.Parent
@@ -760,8 +760,8 @@ local function PCDYEHD_fake_script() -- TopBar.DragControl
 	frame.Draggable = true
 	
 end
-coroutine.wrap(PCDYEHD_fake_script)()
-local function ZBRHTMX_fake_script() -- Close.LocalScript 
+coroutine.wrap(WLMZUYQ_fake_script)()
+local function APIJO_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local CloseMenu = script.Parent.Parent.Parent.Parent.CloseMenu
@@ -770,8 +770,8 @@ local function ZBRHTMX_fake_script() -- Close.LocalScript
 		CloseMenu.Visible = true
 	end)
 end
-coroutine.wrap(ZBRHTMX_fake_script)()
-local function OMSM_fake_script() -- OpenMonstersHighlightList.OpenHighlightList 
+coroutine.wrap(APIJO_fake_script)()
+local function BDLMF_fake_script() -- OpenMonstersHighlightList.OpenHighlightList 
 	local script = Instance.new('LocalScript', OpenMonstersHighlightList)
 
 	local MonstersHighlightList = script.Parent.Parent.Parent.MonstersHighlightList
@@ -781,8 +781,8 @@ local function OMSM_fake_script() -- OpenMonstersHighlightList.OpenHighlightList
 	end)
 	
 end
-coroutine.wrap(OMSM_fake_script)()
-local function SEXRQQ_fake_script() -- TopBar_2.DragControl 
+coroutine.wrap(BDLMF_fake_script)()
+local function PCFRA_fake_script() -- TopBar_2.DragControl 
 	local script = Instance.new('LocalScript', TopBar_2)
 
 	local frame = script.Parent.Parent
@@ -790,8 +790,8 @@ local function SEXRQQ_fake_script() -- TopBar_2.DragControl
 	frame.Draggable = true
 	
 end
-coroutine.wrap(SEXRQQ_fake_script)()
-local function NATDNH_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(PCFRA_fake_script)()
+local function ZTHRNX_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local HighlightList = script.Parent.Parent.Parent
@@ -800,8 +800,8 @@ local function NATDNH_fake_script() -- Close_2.LocalScript
 		HighlightList.Visible = false
 	end)
 end
-coroutine.wrap(NATDNH_fake_script)()
-local function TGYEOR_fake_script() -- Blocks.BlocksHighlight 
+coroutine.wrap(ZTHRNX_fake_script)()
+local function PQKAP_fake_script() -- Blocks.BlocksHighlight 
 	local script = Instance.new('LocalScript', Blocks)
 
 	local blocks = {
@@ -857,8 +857,8 @@ local function TGYEOR_fake_script() -- Blocks.BlocksHighlight
 	end)
 	
 end
-coroutine.wrap(TGYEOR_fake_script)()
-local function WNHYHHW_fake_script() -- FoodPacks.FoodPackHighlight 
+coroutine.wrap(PQKAP_fake_script)()
+local function LWNSE_fake_script() -- FoodPacks.FoodPackHighlight 
 	local script = Instance.new('LocalScript', FoodPacks)
 
 	local function getAllFoodPacks()
@@ -928,8 +928,8 @@ local function WNHYHHW_fake_script() -- FoodPacks.FoodPackHighlight
 	end)
 	
 end
-coroutine.wrap(WNHYHHW_fake_script)()
-local function OYYQS_fake_script() -- Fuses.FusesHighlight 
+coroutine.wrap(LWNSE_fake_script)()
+local function SEBUB_fake_script() -- Fuses.FusesHighlight 
 	local script = Instance.new('LocalScript', Fuses)
 
 	local fuses = {
@@ -975,8 +975,8 @@ local function OYYQS_fake_script() -- Fuses.FusesHighlight
 	end)
 	
 end
-coroutine.wrap(OYYQS_fake_script)()
-local function XWMF_fake_script() -- Batteries.BatteriesHighlight 
+coroutine.wrap(SEBUB_fake_script)()
+local function NFMGM_fake_script() -- Batteries.BatteriesHighlight 
 	local script = Instance.new('LocalScript', Batteries)
 
 	local function getAllBatteries()
@@ -1046,8 +1046,8 @@ local function XWMF_fake_script() -- Batteries.BatteriesHighlight
 	end)
 	
 end
-coroutine.wrap(XWMF_fake_script)()
-local function BWIF_fake_script() -- Lightbulbs.LightbulbHighlight 
+coroutine.wrap(NFMGM_fake_script)()
+local function TRPCA_fake_script() -- Lightbulbs.LightbulbHighlight 
 	local script = Instance.new('LocalScript', Lightbulbs)
 
 	local function getAllLightBulbs()
@@ -1115,8 +1115,8 @@ local function BWIF_fake_script() -- Lightbulbs.LightbulbHighlight
 	end)
 	
 end
-coroutine.wrap(BWIF_fake_script)()
-local function AQJR_fake_script() -- GasCanisters.GasCanisterHighlight 
+coroutine.wrap(TRPCA_fake_script)()
+local function EQQM_fake_script() -- GasCanisters.GasCanisterHighlight 
 	local script = Instance.new('LocalScript', GasCanisters)
 
 	local function getAllGasCanisters()
@@ -1186,8 +1186,8 @@ local function AQJR_fake_script() -- GasCanisters.GasCanisterHighlight
 	end)
 	
 end
-coroutine.wrap(AQJR_fake_script)()
-local function PCSWZA_fake_script() -- SugarPacks.PurpleHighlight 
+coroutine.wrap(EQQM_fake_script)()
+local function VZTWLA_fake_script() -- SugarPacks.PurpleHighlight 
 	local script = Instance.new('LocalScript', SugarPacks)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1212,8 +1212,33 @@ local function PCSWZA_fake_script() -- SugarPacks.PurpleHighlight
 	end)
 	
 end
-coroutine.wrap(PCSWZA_fake_script)()
-local function ESDKXU_fake_script() -- TopBar_3.DragControl 
+coroutine.wrap(VZTWLA_fake_script)()
+local function DZARY_fake_script() -- ALLOW.LocalScript 
+	local script = Instance.new('LocalScript', ALLOW)
+
+	function TERMINATE()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		TERMINATE()
+	end)
+	
+	
+end
+coroutine.wrap(DZARY_fake_script)()
+local function ZFSOGM_fake_script() -- DENY.LocalScript 
+	local script = Instance.new('LocalScript', DENY)
+
+	local CloseMenu = script.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		CloseMenu.Visible = false
+	end)
+	
+end
+coroutine.wrap(ZFSOGM_fake_script)()
+local function BGVNDA_fake_script() -- TopBar_3.DragControl 
 	local script = Instance.new('LocalScript', TopBar_3)
 
 	local frame = script.Parent.Parent
@@ -1221,8 +1246,8 @@ local function ESDKXU_fake_script() -- TopBar_3.DragControl
 	frame.Draggable = true
 	
 end
-coroutine.wrap(ESDKXU_fake_script)()
-local function IOYP_fake_script() -- Close_3.LocalScript 
+coroutine.wrap(BGVNDA_fake_script)()
+local function BTVM_fake_script() -- Close_3.LocalScript 
 	local script = Instance.new('LocalScript', Close_3)
 
 	local HighlightList = script.Parent.Parent.Parent
@@ -1231,8 +1256,8 @@ local function IOYP_fake_script() -- Close_3.LocalScript
 		HighlightList.Visible = false
 	end)
 end
-coroutine.wrap(IOYP_fake_script)()
-local function UVYB_fake_script() -- AddHighlightToBlue.BlueHighlight 
+coroutine.wrap(BTVM_fake_script)()
+local function TIJSO_fake_script() -- AddHighlightToBlue.BlueHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToBlue)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1257,8 +1282,8 @@ local function UVYB_fake_script() -- AddHighlightToBlue.BlueHighlight
 	end)
 	
 end
-coroutine.wrap(UVYB_fake_script)()
-local function KHSKH_fake_script() -- AddHighlightToGreen.GreenHighlight 
+coroutine.wrap(TIJSO_fake_script)()
+local function APKD_fake_script() -- AddHighlightToGreen.GreenHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToGreen)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1283,8 +1308,8 @@ local function KHSKH_fake_script() -- AddHighlightToGreen.GreenHighlight
 	end)
 	
 end
-coroutine.wrap(KHSKH_fake_script)()
-local function WIFKUY_fake_script() -- AddHighlightToOrange.OrangeHighlight 
+coroutine.wrap(APKD_fake_script)()
+local function TFGR_fake_script() -- AddHighlightToOrange.OrangeHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToOrange)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1309,8 +1334,8 @@ local function WIFKUY_fake_script() -- AddHighlightToOrange.OrangeHighlight
 	end)
 	
 end
-coroutine.wrap(WIFKUY_fake_script)()
-local function FRRWXE_fake_script() -- AddHighlightToPurple.PurpleHighlight 
+coroutine.wrap(TFGR_fake_script)()
+local function PBVT_fake_script() -- AddHighlightToPurple.PurpleHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToPurple)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1335,8 +1360,8 @@ local function FRRWXE_fake_script() -- AddHighlightToPurple.PurpleHighlight
 	end)
 	
 end
-coroutine.wrap(FRRWXE_fake_script)()
-local function ZAIRL_fake_script() -- AddHighlightToYellow.YellowHighlight 
+coroutine.wrap(PBVT_fake_script)()
+local function SAYG_fake_script() -- AddHighlightToYellow.YellowHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToYellow)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1361,8 +1386,8 @@ local function ZAIRL_fake_script() -- AddHighlightToYellow.YellowHighlight
 	end)
 	
 end
-coroutine.wrap(ZAIRL_fake_script)()
-local function QVXATEQ_fake_script() -- AddHighlightToCyan.CyanHighlight 
+coroutine.wrap(SAYG_fake_script)()
+local function KTZYI_fake_script() -- AddHighlightToCyan.CyanHighlight 
 	local script = Instance.new('LocalScript', AddHighlightToCyan)
 
 	local MonsterFolder = game.Workspace.Monsters
@@ -1387,29 +1412,36 @@ local function QVXATEQ_fake_script() -- AddHighlightToCyan.CyanHighlight
 	end)
 	
 end
-coroutine.wrap(QVXATEQ_fake_script)()
-local function JAPRL_fake_script() -- ALLOW.LocalScript 
-	local script = Instance.new('LocalScript', ALLOW)
+coroutine.wrap(KTZYI_fake_script)()
+local function CSIVE_fake_script() -- ra1nb0wUI.CloseMenuFollowScript 
+	local script = Instance.new('LocalScript', ra1nb0wUI)
 
-	function TERMINATE()
-		script.Parent.Parent.Parent.Parent:Destroy()
+	-- Script to make CloseMenu follow MainFrame
+	local Players = game:GetService("Players")
+	local StarterGui = game:GetService("StarterGui")
+	
+	local player = Players.LocalPlayer
+	local playerGui = player:WaitForChild("PlayerGui")
+	
+	-- Wait for the ra1nb0wUI to be loaded
+	local ra1nb0wUI = playerGui:WaitForChild("ra1nb0wUI")
+	local mainFrame = ra1nb0wUI:WaitForChild("MainFrame")
+	local closeMenu = ra1nb0wUI:WaitForChild("CloseMenu")
+	
+	-- Function to update CloseMenu position to match MainFrame
+	local function updateCloseMenuPosition()
+		closeMenu.Position = mainFrame.Position
 	end
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		TERMINATE()
-	end)
+	-- Update position whenever MainFrame position changes
+	mainFrame:GetPropertyChangedSignal("Position"):Connect(updateCloseMenuPosition)
 	
+	-- Also update when MainFrame size changes (in case it affects positioning)
+	mainFrame:GetPropertyChangedSignal("Size"):Connect(updateCloseMenuPosition)
 	
+	-- Initial position sync
+	updateCloseMenuPosition()
+	
+	print("CloseMenu is now following MainFrame")
 end
-coroutine.wrap(JAPRL_fake_script)()
-local function STBPGVT_fake_script() -- DENY.LocalScript 
-	local script = Instance.new('LocalScript', DENY)
-
-	local CloseMenu = script.Parent.Parent.Parent
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		CloseMenu.Visible = false
-	end)
-	
-end
-coroutine.wrap(STBPGVT_fake_script)()
+coroutine.wrap(CSIVE_fake_script)()
