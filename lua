@@ -97,7 +97,7 @@ local UICorner_35 = Instance.new("UICorner")
 
 ra1nb0wUI.Name = "ra1nb0wUI"
 ra1nb0wUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ra1nb0wUI.Enabled = false
+ra1nb0wUI.Enabled = true
 ra1nb0wUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainFrame.Name = "MainFrame"
