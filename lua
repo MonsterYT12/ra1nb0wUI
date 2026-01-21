@@ -1,10 +1,12 @@
--- Version: 3.2
+-- Version: 3.3
 
 -- Oh boy im gonna have fun making this better..
 
 -- Also, "MHL" is an abbreviation for "Monster Highlight List",
 -- "IHL" is an abbreviation for "Item Highlight List",
 -- and "LHL" is an abbreviation for "Looky Highlight List".
+
+-- LHL not working, as I have no idea where to find the lookies, Not even selectable with InfiniteYield + Explorer / Dex.
 
 -- I have no idea what I'm doing, but I'm doing it anyways! :D
 
